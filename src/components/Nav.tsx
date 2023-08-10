@@ -1,15 +1,23 @@
+'use client'
 import Link from "next/link";
 import Hambuger from "./Hamburger";
+import { useState } from "react";
 // This component is for future use of a navigation bar
+
+const phoneNavStyles = 'sm:flex gap-4 text-h-text text-xl font-medium';
+const desktopNavStyles = 'sm:flex hidden flex-col sm:flex-row gap-4 text-h-text text-xl font-medium'
 const Nav = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="pt-4 md:pt-16 sticky top-0">
       <header className="z-50 flex justify-end bg-h-bg w-full">
         <nav>
           <div className="sm:hidden flex items-center">
-            <Hambuger />
+            <Hambuger isOpen={isOpen} toggleMenu={() => setIsOpen(!isOpen)}/>
           </div>
-          <ul className="hidden sm:flex gap-4 text-h-text text-xl font-medium">
+          <ul className={`${
+            isOpen ? phoneNavStyles : desktopNavStyles
+          }`}>
             <li className="flex items-center">
               <Link
                 href="/"
