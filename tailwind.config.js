@@ -2,11 +2,11 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   theme: {
     container: {
       center: true,
@@ -17,6 +17,13 @@ module.exports = {
     },
     extend: {
       colors: {
+        // Howie Color Palatte 
+        "h-text": "#363836",
+        "h-bg": "#F7F5EE",
+        "h-primary": "#8fe5c7",
+        "h-secondary": "#363836",
+        "h-accent": "#e0ff36",
+
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -56,6 +63,9 @@ module.exports = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      textShadow: {
+        'shadow': '0 0 5px rgba(0, 0, 0, 0.7)'
+      },
       keyframes: {
         "accordion-down": {
           from: { height: 0 },
@@ -73,4 +83,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

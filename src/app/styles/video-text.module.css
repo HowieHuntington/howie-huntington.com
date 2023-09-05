@@ -1,0 +1,37 @@
+/* .video-text-component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    background-color: rgb(178, 178, 178);
+}
+.wrapper {
+    position: relative;
+    width: 65%;
+    height: 30%;
+    margin: 0 auto;    
+}
+video {
+    width: 100%;
+    height: auto;
+}
+.clipped-video {
+    -webkit-clip-path: url(#text-overlay);
+    clip-path: url(#text-overlay);
+}
+svg {
+    display: block;
+    position: absolute;
+    top: 0;
+} */
+/* text {
+    font-weight: bold;
+    font-size: 12vw;
+    letter-spacing: -4px;
+} */
